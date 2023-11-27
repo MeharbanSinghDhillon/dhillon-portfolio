@@ -1,0 +1,81 @@
+h1,h2,h3,h4,h5,h6,p,a
+{
+    text-decoration: none;
+    color: #164863;
+}
+.distination-layout-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+
+     
+}
+.dist-layout
+{
+    border: 3px double #164863;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px  #164863;
+    flex-basis: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.dist-layout img{
+    width:100%;
+    object-fit: cover;
+    border: 1px double transparent;
+    border-radius: 20px;
+}
+.dist-layout a {
+    text-decoration: none;
+    
+}
+
+@media (max-width:1199px)/*tablet */
+{   
+   p{
+    font-size: 0.8rem;
+     }
+h1
+{
+    font-size: 1rem;
+}
+}
+@media (max-width:879px)/*tablet */
+{
+         p{
+                    font-size: 0.8rem;
+     
+}
+h1
+{
+    font-size: 1rem;
+}
+}
+@media (max-width:715px)/*tablet */
+{
+    p{
+        font-size: 0.6rem; 
+}
+h1
+{
+    font-size: 1rem;
+
+}
+}
+@media (max-width:599px)/*tablet */
+{
+    
+    p{
+        font-size: 0.4rem;   
+}
+h1
+{
+    font-size: 1rem;
+
+}
+}
+

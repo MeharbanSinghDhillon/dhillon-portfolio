@@ -1,0 +1,136 @@
+.first-layout-container{
+display: grid;
+grid-template-columns: repeat(4, minmax(100px,500px));
+grid-template-rows:  repeat(3, 1fr);
+gap:10px;
+background-color:   #DDF2FD;
+margin: 20px;
+padding: 10px;
+
+}
+h1,h2,h3,h4,h5,h6,p
+{
+    font-family: 'Agbalumo', serif;
+    color:#DDF2FD ;
+}
+/*.layout{ /*used for background color  */ /*
+    background-color: #164863;
+}*/
+p{
+    font-size: 1.2rem;
+   
+}
+.layout-selva-winter p , .layout-selva-winter h1{ 
+    color:#164863;
+}
+.border /*border for every div inside grid */ 
+{
+ border: 2px solid transparent;
+ border-radius: 10px;
+ box-shadow: 1px 1px 3px #164863;
+} 
+
+.selva-img{
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid transparent;
+ border-radius: 10px;
+    
+}
+.layout-selva-winter{ /*flex box inside grid */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.selva-winter1{ /*this is first grid photo selva-19 */
+   
+    grid-area: 1 / 1 / 2 / 2 ;    
+}
+
+.selva-winter2 {/* photo selva-22 */
+     grid-area: 2 / 1 / 3 / 2;
+    
+}
+.selva-winter3 /*photo selva-18 */
+{
+     grid-area: 3 / 1 / 4 / 2;
+   
+}
+.selva-winter4 /*photo selva-10 */
+{
+    grid-area: 3 / 2 / 4/ 4 ;
+     
+}
+
+.selva-winter6 /* photo selva-12*/
+{
+    grid-area: 2 / 2 / 3 / 4 ;
+    
+}
+
+.selva-winter7  /* photo selva 1*/
+{
+     grid-area: 1 / 2 / 2 / 5;
+ 
+}
+
+.selva-winter8/* photo selva-3  */
+{
+ grid-area:  2 / 4 / 3 / 5;
+    }
+
+  
+@media (max-width:1199px)/*tablet */
+{
+    
+    p{
+        font-size: 0.8rem;
+      
+}
+h1
+{
+    font-size: 1rem;
+
+}
+}
+@media (max-width:879px)/*tablet */
+{
+    
+    p{
+        font-size: 0.8rem;
+      
+}
+h1
+{
+    font-size: 1rem;
+
+}
+}
+@media (max-width:715px)/*tablet */
+{
+    
+    p{
+        font-size: 0.6rem;
+      
+}
+h1
+{
+    font-size: 1rem;
+
+}
+}
+@media (max-width:599px)/*tablet */
+{
+    
+    p{
+        font-size: 0.4rem;
+      
+}
+h1
+{
+    font-size: 1rem;
+
+}
+}
+
