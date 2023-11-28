@@ -1,7 +1,12 @@
+body{
+    background: linear-gradient( #DDF2FD ,  #16486352 ,  #427D9D, #9BBEC8  );
+}
+
 h1,h2,h3,h4,h5,h6,p,a
 {
     text-decoration: none;
     color: #164863;
+    font-family: 'Agbalumo', serif;
 }
 .distination-layout-container{
     display: flex;
@@ -14,24 +19,31 @@ h1,h2,h3,h4,h5,h6,p,a
 }
 .dist-layout
 {
-    border: 3px double #164863;
-    border-radius: 20px;
+    border: 1px solid #164863;
+    border-radius: 1px;
     box-shadow: 2px 2px 3px  #164863;
-    flex-basis: 250px;
+    flex-basis: calc(30%);
+    height: 1fr;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 5px;
+    background: linear-gradient( #DDF2FD ,  #16486352 ,  #427D9D, #9BBEC8  );
     
 }
+
 .dist-layout img{
     width:100%;
-    object-fit: cover;
-    border: 1px double transparent;
-    border-radius: 20px;
-}
-.dist-layout a {
-    text-decoration: none;
+    object-fit:cover;
+     border: 1px double transparent;
+    border-radius: 1px;
     
+}
+
+.dist-layout > a  > h2{
+    text-decoration: none;
+    text-transform: uppercase;
+       
 }
 
 @media (max-width:1199px)/*tablet */
