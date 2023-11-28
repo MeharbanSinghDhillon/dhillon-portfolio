@@ -14,7 +14,6 @@ h1,h2,h3,h4,h5,h6,p,a
     justify-content: center;
     align-items: center;
     gap:20px;
-
      
 }
 .dist-layout
@@ -23,22 +22,35 @@ h1,h2,h3,h4,h5,h6,p,a
     border-radius: 1px;
     box-shadow: 2px 2px 3px  #164863;
     flex-basis: calc(30%);
+    flex-wrap: wrap;
     height: 1fr;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 5px;
+   
     background: linear-gradient( #DDF2FD ,  #16486352 ,  #427D9D, #9BBEC8  );
+   
     
 }
+
 
 .dist-layout img{
     width:100%;
     object-fit:cover;
      border: 1px double transparent;
     border-radius: 1px;
+   /* transition: 1s;
+    background-color: black;*/
+
     
-}
+} /*    this function optional for on hover th photo and photo can chage dimension
+.dist-layout img:hover{
+    width: 95%;
+    transition: 1s ease;
+    opacity: 0.4;
+   
+    
+}*/
 
 .dist-layout > a  > h2{
     text-decoration: none;
@@ -69,6 +81,7 @@ h1
 }
 @media (max-width:715px)/*tablet */
 {
+    
     p{
         font-size: 0.6rem; 
 }
@@ -77,9 +90,14 @@ h1
     font-size: 1rem;
 
 }
+
 }
-@media (max-width:599px)/*tablet */
+@media (max-width:480px)/*tablet */
 {
+    .distination-layout-container{
+        flex-direction: column;
+      
+    }
     
     p{
         font-size: 0.4rem;   
