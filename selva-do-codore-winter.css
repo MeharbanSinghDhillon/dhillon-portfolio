@@ -109,11 +109,7 @@ h1
 }
 @media (max-width:715px)/*tablet */
 {
-    .first-layout-container{ /* At 715px my grid layout change into flex   */ 
-        display: flex;
-        flex-direction: column;
-        
-        }
+    
     
     p{
         font-size: 0.6rem;
@@ -127,7 +123,11 @@ h1
 }
 @media (max-width:599px)/*tablet */
 {
-    
+    .first-layout-container{ /* At 715px my grid layout change into flex   */ 
+        display: flex;
+        flex-direction: column;
+        
+        }
     p{
         font-size: 0.4rem;
       
