@@ -24,24 +24,23 @@
                 window.alert("clicked on cancel");
 
                }
-           }
+           }/*start my calculator code here with input throw prompt */
         function myPrompt(){
-            var sum1=Number(prompt("First number here"));       
-            switch (sum1==false){
-               case sum1==false: window.alert("Enter first valid number");
-                 }      
-            var sum2= Number(prompt("Second number here"));
-            if (sum1==false){
-                window.alert("Enter 2nd valid number");
+            var sum1=Number(prompt("First number here")); /*input first number */
+            var sum2= Number(prompt("Second number here"));/*input 2nd number */
+                  
+           
+           if (sum1==false || sum2==false){ /* if any of two numbers is invalid generate error*/
+                window.alert("Enter valid number");
                  } 
             ans=sum1+sum2;
-            if (ans==false)
+         if (sum1==false || sum2==false)/* if any of two numbers is false generate error on result windoes*/
             {
              window.alert("I am unable to don calculation because you are not entered a number")
 
             }
            else{
-            window.alert("sum of your numbers id \r" + ans);
+            window.alert("sum of your numbers id \r" + ans);/* if all statements are true then show this message */
            }
                    
           
