@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+    <button onclick="myAlert()">myAlert</button><br><br>
+    <button onclick="myConfirm()">myconfirm</button><br><br>
+    <button onclick="myPrompt()">myPrompt</button>
+    <script>
+        /*
+        Javascript permette di aprire delle finestra di avviso 
+        per evidenziare messaggi o sottoporre delle scelte 
+        ai visitatori del nostro sito, vediamo quelli più comuni.
+        */    
+       function myAlert(){
+           var timeNow= new Date();
+           window.alert("my alert show me today date and time \r" + timeNow);
+       }
+       function myConfirm(){
+           var answer = window.confirm("you are on confirm page");
+           if(answer==true){
+               window.alert("clicked on ok")}
+               else{
+
+                window.alert("clicked on cancel");
+
+               }
+           }
+        function myPrompt(){
+            var sum1=Number(prompt("First number here"));       
+            switch (sum1==false){
+               case sum1==false: window.alert("Enter first valid number");
+                 }      
+            var sum2= Number(prompt("Second number here"));
+            if (sum1==false){
+                window.alert("Enter 2nd valid number");
+                 } 
+            ans=sum1+sum2;
+            if (ans==false)
+            {
+             window.alert("I am unable to don calculation because you are not entered a number")
+
+            }
+           else{
+            window.alert("sum of your numbers id \r" + ans);
+           }
+                   
+          
+            }
+            
+
+        /*
+        Per vostra utilità riporto i comandi ammessi oltre al testo, 
+        utilizziamo backslash (barra rovesciata) per inserire questi caratteri:
+
+        \'  single quote        -> visualizza '
+        \"  double quote        -> visualizza "
+        \\  backslash           -> visualizza \
+        \n  new line            -> vai a capo
+        \r  carriage return     -> vai a capo
+
+        */
+    </script>
+ 
+</body>
+</html>
