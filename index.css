@@ -1,0 +1,87 @@
+html{
+    font-size: 15px;
+}
+body{
+    background-color:#DDF2FD;
+    margin: 0;
+    padding:0;
+    font-family:'Agbalumo', serif; ;
+}
+h1,h2,h3,h4,h5,h6,p /*this is font family for entire page  */
+{
+    font-family: 'Agbalumo', serif;
+  }
+  li > a{
+      text-decoration: none;
+      color: #164863;
+      cursor: pointer;
+  } 
+  .heading /* website title   */
+{
+         background-color:#164863 ;
+}
+
+.heading > a{/* website title h1  */
+    color:#DDF2FD;
+      text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+.no-border{/*no border  */
+    border: none;
+}
+
+.nav-bar /* nav bar */ 
+{
+    background-color: #9BBEC8;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: 0.5fr auto;
+    border-bottom: 10px solid #427D9D ;
+  
+  
+      }
+
+.nav-bar > .menu-align /* alignment nav bar items*/
+{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.5rem;
+color:#164863 ;
+border-left: 2px solid #164863;
+transition-property: background-color ;
+transition-delay: 0.1s;
+transition-duration: 1s ;
+transition-timing-function: ease-in-out;
+}
+.nav-bar >.menu-align:hover/* alignment nav bar items on hover */
+ {
+    background-color:#164863 ;
+    color: #9BBEC8;
+}
+.nav-bar >li a:hover/* link in  nav bar items on hover */
+ {
+      color: #9BBEC8;
+}
+
+@media (max-width:1000px){ /* alignment max width for tablet*/
+    .nav-bar > .menu-align  {
+    font-size: 1rem;
+    font-weight: 700;
+    }
+    .heading > h1{/* website title h1  */
+       font-size: 1rem;
+    }
+}
+@media (max-width:700px){ /* alignment max width for tablet*/
+    .nav-bar > .menu-align  {
+    font-size: 0.7rem;
+    font-weight: 700;
+    }
+    .heading > h1{/* website title h1  */
+       font-size: 0.8rem;
+    }
+}

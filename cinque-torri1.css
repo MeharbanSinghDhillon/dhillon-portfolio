@@ -5,12 +5,12 @@
     gap: 10px;
     padding: 0%;
     background-color:   #DDF2FD;
-    border: 5px solid black;
+    
   
        
     
 }
-div > .heading /*here is placed heading of my page    */
+div > .destinations-heading/*here is placed heading of page    */
 {
     display: flex;
     flex:100%;
@@ -34,7 +34,7 @@ p{
    
 }
  /* here is font color inside the photogallery di */ 
-.layout-cinque-torri > p , h1 ,  h3{ 
+.layout-cinque-torri { 
     color:#164863;
     text-transform: uppercase;
 }
@@ -55,10 +55,28 @@ p{
 
 .cinque-torri-img{
     border: 2px solid transparent;
-    border-radius: 20px;
+    border-radius: 20px 0;
 }
 .cinque-torri-2{
     grid-area: 1 / 2 / 2 / 4 ;
+}
+.about-destination{ /*about destination div start here  */
+    display: flex;
+    padding: 10px;
+}
+.about-cinque-torri{ /*where i wrote about destination  */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 2;
+}
+.maps-iframe{ /* google maps location */
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.iframeposition{
+  
 }
 @media (max-width:720px){
 
@@ -66,6 +84,9 @@ p{
         flex-direction: column;
         
         
+    }
+    .about-destination{ /*about destination div start here  */
+        flex-direction: column;
     }
 
 
