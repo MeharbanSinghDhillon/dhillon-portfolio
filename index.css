@@ -81,7 +81,7 @@ transition-timing-function: ease-in-out;
     font-size: 0.7rem;
     font-weight: 700;
     }
-    .heading > h1{/* website title h1  */
+    .heading > a > h1{/* website title h1  */
        font-size: 0.8rem;
     }
 }
