@@ -1,11 +1,12 @@
+.main-image-slider-container{
+    width: 100%;
+    justify-content: center;
+}
 .image-slider-container {
     display: flex;
     height: 80vh;
     gap: 1px;
-
- 
-   
-
+    justify-content: center;    
     }
 .image-slider-container > div{
     flex: 1;

@@ -34,23 +34,23 @@ body{
 }
 
 
-.dist-layout > a > img{
+.dist-layout > a > img{ /* place where in linked href of landing pages */
     width:100%;
     object-fit:cover;
       transition: 1s ease;
   
 
 } 
-/*    this function optional for on hover th photo and photo can chage dimension */
+/*    this function for on hover th photo and photo can change dimension */
 .dist-layout > a > img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 2s ease;
     opacity: 0.9;
     filter:contrast(2);   
     
 }
 
-.dist-layout > a  > h2{
+.dist-layout > a  > h2{ 
     text-decoration: none;
     text-transform: uppercase;
        
@@ -77,7 +77,7 @@ h1
     font-size: 1rem;
 }
 }
-@media (max-width:715px)/*tablet */
+@media (max-width:720px)/*tablet */
 {
     
     p{
@@ -87,6 +87,10 @@ h1
 {
     font-size: 1rem;
 
+}
+.dist-layout > a  > h2{ 
+   font-size: 0.8rem;
+       
 }
 
 }

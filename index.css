@@ -66,6 +66,24 @@ transition-timing-function: ease-in-out;
  {
       color: #9BBEC8;
 }
+.index-informational{ /*where i write discription about travelling */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+      
+    
+}
+.index-informational > div  {
+    display: flex;  
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;   
+    max-width: 48%;
+}
 
 @media (max-width:1000px){ /* alignment max width for tablet*/
     .nav-bar > .menu-align  {
@@ -76,7 +94,7 @@ transition-timing-function: ease-in-out;
        font-size: 1rem;
     }
 }
-@media (max-width:700px){ /* alignment max width for tablet*/
+@media (max-width:720px){ /* alignment max width for tablet*/
     .nav-bar > .menu-align  {
     font-size: 0.7rem;
     font-weight: 700;

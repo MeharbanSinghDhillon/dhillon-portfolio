@@ -1,0 +1,104 @@
+.main-layout-container-passo-giau{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0%;
+    background-color:   #DDF2FD;
+    
+  
+       
+    
+}
+div > .destinations-heading/*here is placed heading of page    */
+{
+    display: flex;
+    flex:100%;
+    flex-direction: column;
+    align-items: center;;
+    justify-content: center;
+    text-align: center;
+    
+        
+}
+
+h1,h2,h3,h4,h5,h6,p /*this is font family for entire page  */
+{
+    font-family: 'Agbalumo', serif;
+  }
+/*.layout{ /*used for background color  */ /*
+    background-color: #164863;
+}*/
+p{
+    font-size: 1.2rem;
+   
+}
+ /* here is font color inside the photogallery di */ 
+.layout-passo-giau { 
+    color:#164863;
+    text-transform: uppercase;
+}
+.passo-giau-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+ 
+.layout-passo-giau{ /*internal layout where i places all my photos */
+    display: flex;  
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;   
+    flex-basis: calc(31%);
+}
+
+.passo-giau-img{ /*border of immagines   */
+    border: 2px solid transparent;
+    border-radius: 2px 0;
+}
+.about-destination{ /*about destination div start here  */
+    display: flex;
+    padding: 10px;
+}
+.about-passo-giau{ /*where i wrote about destination  */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 2;
+}
+.maps-iframe{ /* google maps location */
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.my-footer/*footer of website */
+    {
+        background-color:#164863 ;
+       display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .my-footer > p{
+        color: #9BBEC8;
+    }
+    #copyrights{
+        color: #9BBEC8;
+    }
+
+@media (max-width:720px){
+
+    .main-layout-container-passo-giau{
+        flex-direction: column;
+        
+        
+    }
+    .about-destination{ /*about destination div start here  */
+        flex-direction: column;
+    }
+    .heading > a > h1{/* website title h1  */
+        font-size: 0.8rem;
+     }
+
+}
