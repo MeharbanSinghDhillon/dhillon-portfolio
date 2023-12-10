@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .main{ /* main div that contians all comment content (img, paragraph, input and button) */
+                border: 2px solid black;
+                display: flex;
+                flex-direction: column;
+                height: auto 100vh;
+                max-width: 500px;
+                gap: 10px;  
+                align-items: center;
+            }
+            .main > img {
+                width: 500px;
+                  }
+            .commentdecoration{ /* decoration for showing comment after input on webpage  */
+                color:gold;
+                background-color:rgba(95, 158, 160, 0.432);
+                text-align: center;
+                font-size: 2rem;
+                align-items: center;
+                justify-content: center;
+               
+               }
+               .inputsearchlocation{
+                width: 250px;
+                align-items: center;
+               }
+            .inputsearchlocation:focus{ /* for highlight input area */
+                background-color: rgba(175, 70, 0, 0.685);
+              
+            }
+           
+            
+        </style>
+    </head>
+<body>
+    <div class="main">
+        
+        <input class="inputsearchlocation" type="text" id="inputsearchlocation"><br>
+        <button onclick="searchInput()">Submit your comment</button>
+        <button onclick="refresh()">Refresh your comment here</button>
+        <p class="commentdecoration" id="searchoutputlocation"></p><br>
+               
+    </div>
+    <script>
+               function searchInput(){
+                   var searchOutput=document.getElementById("searchoutputlocation")
+                   searchOutput.innerHTML;
+                   try{
+                       var searchInputValue=document.getElementById("inputsearchlocation").value;// input search here
+                      var searchInputValueTrim= searchInputValue.trim()
+                      var searchInputValueLowerCase=searchInputValueTrim.toLowerCase()
+                     //  var searchFirstChar=searchInputValue.
+
+                       if(searchInputValueLowerCase =="jaskaran") throw `Your full name is Jaskaran Singh Dhillon `
+                       if(searchInputValueLowerCase=="meharban") throw `Your full name is Meharban Singh Dhillon`
+                       if(searchInputValueLowerCase=="jasmeet") throw `Your full name is Jasmeet Kaur Dhillon`
+                       if(searchInputValueLowerCase=="gurpreet") throw `Your full name is Gurpreet Kaur Dhillon`
+                       if(searchInputValueLowerCase=="lakhwinder") throw `Your full name is Lakhwinder Kaur Sandhu`
+                       if(searchInputValueLowerCase=="sarbjit") throw `Your full name is Sarbjit Singh Dhillon`
+                       if(searchInputValueLowerCase=="sehaj") throw `Your full name is Sehaj Singh Dhillon`
+                       if(searchInputValueLowerCase=="sahib") throw `Your full name is Sahib Kaur Dhillon`
+                       if(searchInputValueLowerCase=="agya") throw `Your full name is Agya Kaur Dhillon`
+                       if(searchInputValueLowerCase=="sidak") throw `Your full name is Sidak Kaur Dhillon`
+                   }
+                   catch(err){
+                        searchOutput.innerHTML="Details are:" + err;
+                        document.getElementById("searchoutputlocation")
+                   }
+                   if(searchInputValueLowerCase == false){
+                       searchOutput.innerHTML="Your details are :"+searchInputValue;
+                       document.getElementById("searchoutputlocation")
+                   }
+               }
+          
+ function refresh(){
+    location.reload()
+ }
+    </script>
+</body>
+</html>
