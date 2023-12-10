@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .main{ /* main div that contians all comment content (img, paragraph, input and button) */
+                border: 2px solid black;
+                display: flex;
+                flex-direction: column;
+                height: auto 100vh;
+                max-width: 200px;
+                gap: 10px;  
+                align-items: center;
+                padding: 15px;
+               
+            }
+           
+            .commentdecoration{ /* decoration for showing comment after input on webpage  */
+                color:rgb(5, 5, 3);
+                background-color:rgba(95, 158, 160, 0.432);
+                text-align: center;
+                font-size: 2rem;
+                align-items: center;
+                justify-content: center;
+               
+               }
+         
+            button{
+                border: 2px solid transparent;
+                border-radius: 10px;
+                box-shadow: 5px 5px 4px gray;
+                padding: 10px;
+            }
+           
+            
+        </style>
+    </head>
+<body>
+    <div class="main">
+        
+       
+        <button onclick="clickcounter()">click count here </button>
+        <button onclick="refresh()">Refresh your search</button>
+        <p class="commentdecoration" id="clickcounteroutput"></p><br>
+               
+    </div>
+    <script>
+                let clickcount=0;
+               function clickcounter(){
+                clickcount++;
+               document.getElementById("clickcounteroutput").innerHTML=clickcount;
+               }
+          
+ function refresh(){
+    location.reload()
+ }
+
+    </script>
+</body>
+</html>
