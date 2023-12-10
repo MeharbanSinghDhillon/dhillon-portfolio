@@ -39,6 +39,7 @@
         <input class="inputcomment" type="text" id="writecommenthere"><br>
         <p id="maxchar">Please enter comment of only 20 letters</p>
         <button onclick="inputComment()">Submit your comment</button>
+        <button onclick="refresh()">Refresh your comment here</button>
        
     </div>
     <script>
@@ -79,7 +80,9 @@
                         }
 
         }
-
+ function refresh(){
+    location.reload()
+ }
     </script>
 </body>
 </html>
