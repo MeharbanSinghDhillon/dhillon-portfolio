@@ -2,30 +2,32 @@
 <html>
     <head>
         <style>
-            .main{
+            .main{ /* main div that contians all comment content (img, paragraph, input and button) */
                 border: 2px solid black;
                 display: flex;
                 flex-direction: column;
                 height: auto 100vh;
                 max-width: 500px;
-                
-
-                gap: 10px;
-              
-                
+                gap: 10px;  
             }
             .main > img {
                 width: 500px;
                   }
-            .commentdecoration{
+            .commentdecoration{ /* decoration for showing comment after input on webpage  */
                 color:rebeccapurple;
-                background-color: beige;
+                background-color:gold;
                 text-align: center;
                 font-size: 2rem;
-                           }
-            .inputcomment:focus{
+                align-items: center;
+                justify-content: center;
+               
+               }
+            .inputcomment:focus{ /* for highlight input area */
                 background-color: yellow;
-
+            }
+            #maxchar{
+                justify-content: center;
+                text-align: center;
             }
             
         </style>
@@ -54,8 +56,11 @@
                 var maxCharForComment=charCaptilized.slice(0,20);// here set max char of input to 20 char
                // console.log(charCaptilized); //until here function 
                 
-               document.getElementById("maxchar").innerHTML=`your write ${charCaptilized.length} characatters and you have remaining ${20-charCaptilized.length} charactters`//output of conment
-                
+               document.getElementById("maxchar").innerHTML=`your write ${charCaptilized.length} characatters and you have remaining ${20-charCaptilized.length} charactters` //output of comment
+               if(charCaptilized.length >20){
+                   document.getElementById("maxchar").innerHTML=`You our limit the charactter by ${20-charCaptilized.length} and i cut down the more letters` 
+               }
+            
                if(inputYourComment=="") throw "Please in a valid input"; // start if for throw out errors if input donot match with my equations 
                 
                // NOT WORKING FOR INPUT ONLY STRING TRY
