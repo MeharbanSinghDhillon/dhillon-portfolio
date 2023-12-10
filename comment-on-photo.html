@@ -37,7 +37,7 @@
         <img src="./passo-giau/passo-giau2.jpg"><br>
         <p class="commentdecoration" id="comment"></p><br>
         <input class="inputcomment" type="text" id="writecommenthere"><br>
-        <p id="maxchar">Please enter comment of only 20 letters</p>
+        <p id="maxchar">Please enter comment of only 30 letters</p>
         <button onclick="inputComment()">Submit your comment</button>
         <button onclick="refresh()">Refresh your comment here</button>
        
@@ -57,8 +57,8 @@
                 var maxCharForComment=charCaptilized.slice(0,30);// here set max char of input to 30 char
                // console.log(charCaptilized); //until here function 
                 
-               document.getElementById("maxchar").innerHTML=`your write ${charCaptilized.length} characatters and you have remaining ${20-charCaptilized.length} charactters` //output of comment
-               if(charCaptilized.length >20){
+               document.getElementById("maxchar").innerHTML=`your write ${charCaptilized.length} characatters and you have remaining ${30-charCaptilized.length} charactters` //output of comment
+               if(charCaptilized.length >30){
                    document.getElementById("maxchar").innerHTML=`You our limit the charactter by ${30-charCaptilized.length} and i cut down the more letters` 
                }
             
