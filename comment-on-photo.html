@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .main{
+                border: 2px solid black;
+                display: flex;
+                flex-direction: column;
+                height: auto 100vh;
+                max-width: 500px;
+                
+
+                gap: 10px;
+              
+                
+            }
+            .main > img {
+                width: 500px;
+                  }
+            .commentdecoration{
+                color:rebeccapurple;
+                background-color: beige;
+                text-align: center;
+                font-size: 2rem;
+                           }
+            .inputcomment:focus{
+                background-color: yellow;
+
+            }
+            
+        </style>
+    </head>
+<body>
+    <div class="main">
+        <img src="./passo-giau/passo-giau2.jpg"><br>
+        <p class="commentdecoration" id="comment"></p><br>
+        <input class="inputcomment" type="text" id="writecommenthere"><br>
+        <p id="maxchar">Please enter comment of only 20 letters</p>
+        <button onclick="inputComment()">Submit your comment</button>
+       
+    </div>
+    <script>
+               function inputComment(){
+            var outputComment= document.getElementById("comment");
+            outputComment.innerHTML;
+            try{
+                var inputYourComment=document.getElementById("writecommenthere").value;// input get here
+               
+                var firstChar = inputYourComment.slice(0,1)//first char for Uppercase 
+                var firstCharCaptilized=firstChar.toUpperCase();
+               // console.log(firstCharCaptilized);
+                var remainingChar=inputYourComment.slice(1,inputYourComment.length);
+                var charCaptilized=firstCharCaptilized+remainingChar
+                var maxCharForComment=charCaptilized.slice(0,20);// here set max char of input to 20 char
+               // console.log(charCaptilized); //until here function 
+                
+               document.getElementById("maxchar").innerHTML=`your write ${charCaptilized.length} characatters and you have remaining ${20-charCaptilized.length} charactters`//output of conment
+                
+               if(inputYourComment=="") throw "Please in a valid input"; // start if for throw out errors if input donot match with my equations 
+                
+               // NOT WORKING FOR INPUT ONLY STRING TRY
+          
+               /*  if(typeof inputYourComment =="number") throw "Only alfabat is allow";
+                if(typeof inputYourComment !=="string") throw "no numbers are allow"*/
+                
+                        }
+                        catch(err){//here throw errors if input and equation is not matched .
+                            outputComment.innerHTML="Error: "+ err;
+                            document.getElementById("comment");
+                        }
+                        if(inputYourComment){//if input and equation is matched.
+                            outputComment.innerHTML=maxCharForComment;
+                            document.getElementById("comment");
+                        }
+
+        }
+
+    </script>
+</body>
+</html>
